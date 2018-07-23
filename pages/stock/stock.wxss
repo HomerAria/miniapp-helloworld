@@ -1,0 +1,61 @@
+/* pages/stock/stock.wxss */
+
+.swiper-tab {
+  width: 100%;
+  line-height: 70rpx;
+  border-bottom: 2rpx solid #ccc;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  background: white;
+}
+
+.swiper-tab-list {
+  font-size: 34rpx;
+  padding-top: 5rpx;
+  color: #777;
+  border-bottom: 5rpx solid white;
+  text-align: center;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+
+.active {
+  color: #da7c0c;
+  border-bottom: 5rpx solid #da7c0c;
+}
+
+.contain {
+  height: 100%;
+  background: #333;
+}
+
+.swiper-contain {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-component {
+  margin-top: 80rpx;
+  background: #eee;
+  height: 100%;
+}
+
+/* .swiper-contain image {
+  height: 100rpx;
+  width: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}*/
+
+.swiper-contain button {
+  width: 200rpx;
+  margin-top: 50rpx;
+}
+
+/*.swiper-component {
+  height: 100%;
+} */

@@ -1,0 +1,39 @@
+<!--pages/feed/atlas/atlas.wxml-->
+<!--pages/stock/compFeed/compFeed.wxml-->
+<view class="container withtab" scroll-y="true" bind:scrolltoupper="upper" bind:scrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+
+
+  <!--竖向列表-->
+  <block wx:for="{{feedData}}" wx:for-index="idx" wx:key="item.idx" data-idx="{{idx}}">
+    <view class="feed-item">
+      <!--用户信息-->
+      <view class="feed-source">
+        <image src="{{item.feed_source_img}}"></image>
+        <text>{{item.feed_source_name}}</text>
+      </view>
+
+      <!--内容-->
+      <view class="feed-content">
+        <view class="question" qid="{{question_id}}" bind:tap="bindQueTap">
+          {{item.question}}
+        </view>
+        <view class="answer-txt" bind:tap="bindItemTap" aid="{{answer_id}}">
+          {{item.answer_ctnt}}
+        </view>
+        <view class="answer-actions" bind:tap="bindItemTap">
+          <view class="like-dot">
+            {{item.good_num}} 赞同
+          </view>
+          <view class="comments-dot">
+            {{item.comment_num}} 评论
+          </view>
+          <view class="follow-it">
+            关注问题
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </block>
+</view>

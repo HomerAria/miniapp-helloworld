@@ -1,0 +1,2 @@
+<!--pages/stock/compB/compB.wxml-->
+<text>pages/stock/compB/compB.wxml + {{scrollHeight}}</text>

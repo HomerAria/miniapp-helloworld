@@ -1,0 +1,40 @@
+<!--pages/feed/feed.wxml-->
+<scroll-view style="width:100%;height: 100%;" scroll-y="true" bind:scroll="scrollTopFun">
+  <!--顶部轮播图-->
+  <swiper class="activity" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bind:change="swipeChange">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="aspectFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!--navBar-->
+  <view class="navBar flex-wrp flex-tab ">
+    <view class="navBarItem flex-item {{currentNavTab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:key="id" wx:for-index="idx" data-idx="{{idx}}" bind:tap="tabTap">
+      {{item.title}}
+    </view>
+  </view>
+  <view class="navBar flex-wrp flex-tab topnav" hidden="{{top<180}}">
+    <view class="navBarItem flex-item {{currentNavTab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:key="id" wx:for-index="idx" data-idx="{{idx}}" bind:tap="tabTap">
+      {{item.title}}
+    </view>
+  </view>
+
+  <!--feed整体滑动，包含轮播图-->
+  <view class="container withtab" scroll-y="true" bind:scrolltoupper="upper" bind:scrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+    <!--要闻-->
+    <view class="ctnt0" hidden="{{currentNavTab==0 ? '' : true}}">
+      <componentAtlas prop-a="{{sourceAtlas}}" prop-b="{{resource}}"/>
+    </view>
+    <view class="ctnt0" hidden="{{currentNavTab==1 ? '' : true}}">
+      <componentAtlasA prop-a="{{sourceAtlas}}" prop-b="{{resource}}"/>
+    </view>
+    <view class="ctnt0" hidden="{{currentNavTab==2 ? '' : true}}">
+      <componentAtlasB prop-a="{{resource}}"/>
+    </view>
+
+
+  </view>
+</scroll-view>

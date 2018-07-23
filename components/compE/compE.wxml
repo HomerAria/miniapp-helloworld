@@ -1,0 +1,6 @@
+<!--pages/stock/compA/compA.wxml-->
+
+<view class="root" style="height:{{scrollHeight}}px">A + {{scrollHeight}}
+  <button class="baseButton" bind:tap="onButtonClick" data-hi="sean">click me {{items.title}}</button>
+
+</view>

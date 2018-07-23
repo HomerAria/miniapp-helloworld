@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/stock/stock",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/company/company",
+    "pages/feed/feed"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#333333",
+    "navigationBarTitleText": "HomerAria演示程序",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#333333",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#333333",
+    "position": "bottom",
+    "list": [
+      {
+        "text": "行情",
+        "pagePath": "pages/stock/stock",
+        "iconPath": "pages/images/stock_s.png",
+        "selectedIconPath": "pages/images/stock.png"
+      },
+      {
+        "text": "资讯",
+        "pagePath": "pages/feed/feed",
+        "iconPath": "pages/images/feed_s.png",
+        "selectedIconPath": "pages/images/feed.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/mine_s.png",
+        "selectedIconPath": "pages/images/mine.png"
+      }
+    ]
+  }
+}

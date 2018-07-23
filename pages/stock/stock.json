@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "自选行情",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "compE": "/components/compE/compE",
+    "compB": "/components/compB/compB",
+    "compC": "/components/compC/compC",
+    "compD": "/components/compD/compD",
+    "compFeed": "/components/compFeed/compFeed"
+  }
+}

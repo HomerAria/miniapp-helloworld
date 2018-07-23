@@ -1,0 +1,79 @@
+/* pages/feed/feed.wxss */
+
+.navBar {
+  width: 750rpx;
+  height: 70rpx;
+  background: #298de5;
+  color: #8dcefd;
+  font-size: 26rpx;
+  line-height: 70rpx; /**垂直居中**/
+  z-index: 9999;
+}
+
+.navBarItem.active {
+  color: #fff;
+  border-bottom: solid 2px #fff;
+}
+
+.container {
+  height: 0rpx;      /*100%则自动撑满全屏，html是会向父控件求高度；如果高度指定小于子控件的高度，默认overflow是会被子控件撑开*/
+  /* overflow: scroll; */
+}
+
+.activity {
+  width: 750rpx;
+  height: 360rpx;
+}
+
+.activity image {
+  width: 750rpx;
+  height: 360rpx;
+}
+
+.container .feed-item {
+  width: 700rpx;
+  padding: 30rpx 30rpx 20rpx;
+  margin: 7rpx 0 6rpx 0;
+  background: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px #eee;
+}
+
+.container .feed-item .feed-source {
+  width: 690rpx;
+  left: 0;
+  height: 50rpx;
+}
+
+.container .feed-item .feed-source .avatar {
+  position: relative;
+  display: inline;
+}
+
+.container .feed-item .feed-source a {
+  height: 40rpx;
+}
+
+.container .feed-item .feed-source .avatar image {
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 45rpx;
+  top: 10rpx;
+  vertical-align: middle;
+}
+
+.container .feed-item .feed-source text {
+  height: 50rpx;
+  line-height: 50rpx;
+  vertical-align: middle;
+  margin: 0 0 0 15rpx;
+  color: #a0acac;
+  font-size: 26rpx;
+  text-decoration-line: line-through;
+}
+
+.topnav {
+  position: fixed;
+  top: 0rpx;
+}

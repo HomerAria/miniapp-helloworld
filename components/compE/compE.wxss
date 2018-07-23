@@ -1,0 +1,11 @@
+/* pages/stock/compA/compA.wxss */
+.baseButton{
+  margin: 30rpx 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.root{
+  background: rebeccapurple;
+}

@@ -1,0 +1,94 @@
+/* pages/stock/compFeed/compFeed.wxss */
+
+   /* .container {
+  height: 700rpx;
+}    */
+
+.activity {
+  width: 750rpx;
+  height: 350rpx;
+}
+
+.activity image {
+  width: 750rpx;
+  height: 350rpx;
+}
+
+/*整个回答内容的card*/
+
+.feed-item {
+  width: 100%;
+  padding-top: 10rpx;
+  margin: 7rpx 0 6rpx 0;
+  background: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px #eee;
+}
+
+/*用户信息*/
+
+.feed-source {
+  width: 690rpx;
+  height: 55rpx;
+  display: flex;
+  margin-left: 20rpx;
+  flex-direction: row;
+}
+
+.feed-source image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+  vertical-align: middle;
+}
+
+.feed-source text {
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 0 0 0 20rpx;
+  vertical-align: middle;
+  color: #a0acac;
+  font-size: 26rpx;
+}
+
+/*回答内容*/
+
+.feed-content {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+
+.feed-content .question{
+  display: flex;
+  font-size: 32rpx;
+  font-weight: 600px;
+  line-height: 40rpx;
+  word-spacing: 2rpx;
+  padding-bottom: 20rpx;
+}
+
+.feed-content .answer-txt{
+  font-size: 28rpx;
+  color: #5b5b5b;
+  text-align: justify;
+  line-height: 32rpx;
+}
+
+.feed-content .answer-actions{
+  width: 690rpx;
+  padding: 10rpx 0  0;
+  color: #a0acac;
+  display: flex
+}
+
+.feed-content .answer-actions view{
+  padding: 0 10rpx 0 0;
+  font-size: 28rpx;
+}
+/*
+.feed-content .answer-actions .dot ::after{
+  content: "•";
+} */

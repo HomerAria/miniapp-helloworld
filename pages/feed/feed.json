@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "资讯",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "componentAtlas": "/components/atlas/atlas",
+    "componentAtlasA": "/components/compFeed/compFeed",
+    "componentAtlasB": "/components/compE/compE"
+  }
+}

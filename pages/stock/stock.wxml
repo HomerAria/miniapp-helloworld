@@ -1,0 +1,28 @@
+<!--pages/stock/stock.wxml-->
+<!-- <view class="contain" style="width:100%"> -->
+<view class="swiper-tab flex-wrp flex-tab">
+  <view class="swiper-tab-list {{currentTab==item.index?'active':''}}" bind:tap="swithNav" wx:for="{{tabCont}}" wx:key="item.index" data-current='{{item.index}}'>
+    {{item.title}}
+  </view>
+</view>
+
+<swiper class="swiper-contain" current="{{currentTab}}" duration="300" bind:change="getCurrentTab" data-current='6'>
+  <swiper-item wx:for="{{tabCont}}" wx:key="item.index">
+    <view class="swiper-component" hidden="{{currentTab==0 ? '' : true}}">
+      <compE prop-a="{{resource}}"/>
+    </view>
+    <view class="swiper-component" hidden="{{currentTab==1 ? '' : true}}">
+      <compB prop-a="{{resource}}"/>
+    </view>
+    <view class="swiper-component" hidden="{{currentTab==2 ? '' : true}}">
+      <compC/>
+    </view>
+    <view class="swiper-component" hidden="{{currentTab==3 ? '' : true}}">
+      <compD/>
+    </view>
+    <view class="swiper-component" hidden="{{currentTab==4 ? '' : true}}">
+      <compFeed prop-a="{{resource}}"/>
+    </view>
+  </swiper-item>
+</swiper>
+<!-- </view> -->
