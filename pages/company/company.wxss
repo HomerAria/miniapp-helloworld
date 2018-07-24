@@ -8,14 +8,14 @@
 }
 
 .title{
-  font-size: 40rpx;
+  font-size: 46rpx;
   color: #eee;
   margin-left: 30rpx;
   margin-top: 30rpx;
 }
 
 .source{
-  font-size: 22rpx;
+  font-size: 24rpx;
   margin-left: 30rpx;
   color: #999;
 }
@@ -29,15 +29,12 @@
 }
 
 .wxParse{
-  margin: 30rpx;
-  margin-left: 30rpx;
-  margin-right: 30rpx;
   text-align: justify;
   background: #222;
   color: #bbb;
-  font-size: 26rpx;
-  line-height: 1.4rem;
-  /* text-indent: 1rem; */
+  font-size: 34rpx;
+  line-height: 1.5rem;
+  /* text-indent: 2rem; */
 }
 
 /*root页面的属性*/

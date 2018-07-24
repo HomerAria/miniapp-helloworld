@@ -3,11 +3,11 @@
 <import src="../../wxParse/wxParse.wxml" />
 
 <view class="title">
-  投行的日与夜
+  {{title}}
 </view>
 
 <view class="source">
-  阴影之手 2018-07-17 18:26:11
+  {{source}}
 </view>
 
 <view class="divid"></view>
