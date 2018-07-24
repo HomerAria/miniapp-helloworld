@@ -1,1 +1,46 @@
 /* pages/company/company.wxss */
+
+/*不能放置于app.wxss中，会影响其他页面，且本页面html无法起效*/
+@import "/wxParse/wxParse.wxss";
+
+.sus-h2{
+    color: red;
+}
+
+.title{
+  font-size: 40rpx;
+  color: #eee;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.source{
+  font-size: 22rpx;
+  margin-left: 30rpx;
+  color: #999;
+}
+
+.divid{
+  height: 1px;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  background: #555;
+}
+
+.wxParse{
+  margin: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  text-align: justify;
+  background: #222;
+  color: #bbb;
+  font-size: 26rpx;
+  line-height: 1.4rem;
+  /* text-indent: 1rem; */
+}
+
+/*root页面的属性*/
+page{
+  background: #222;
+}

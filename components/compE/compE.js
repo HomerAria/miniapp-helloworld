@@ -6,7 +6,7 @@ Component({
   properties: {
     propA: {
       type: Object,
-      observer: function (newVal, oldVal, changePath) {
+      observer: function(newVal, oldVal, changePath) {
         this.setData({
           scrollHeight: newVal.windowHeight - 35,
         })
@@ -18,7 +18,9 @@ Component({
    * 组件的初始数据
    */
   data: {
-    items:[{"title":"title1"}],
+    items: [{
+      "title": "title1"
+    }],
     scrollHeight: 0
   },
 
@@ -39,10 +41,14 @@ Component({
         complete: function(res) {},
       });
 
-      
-        console.log("onLoad:" + getApp().globalData.screenHeight);
+      wx.navigateTo({
+        url: '../company/company',
+      })
 
-        
+
+      console.log("onLoad:" + getApp().globalData.screenHeight);
+
+
     }
   }
 

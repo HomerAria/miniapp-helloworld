@@ -1,2 +1,17 @@
 <!--pages/company/company.wxml-->
-<text>pages/company/company.wxml</text>
+
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class="title">
+  投行的日与夜
+</view>
+
+<view class="source">
+  阴影之手 2018-07-17 18:26:11
+</view>
+
+<view class="divid"></view>
+
+<view class="wxParse">
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+</view>
