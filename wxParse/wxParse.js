@@ -19,10 +19,12 @@ import HtmlToJson from './html2json.js';
  **/
 var realWindowWidth = 0;
 var realWindowHeight = 0;
+var windowRatio = 1;
 wx.getSystemInfo({
   success: function (res) {
     realWindowWidth = res.windowWidth
     realWindowHeight = res.windowHeight
+    // windowRatio = res.pixelRatio;        //todo
   }
 })
 /**
@@ -43,7 +45,7 @@ function wxParse(bindName = 'wxParseData', type='html', data='<div class="color:
   transData.view = {};
   transData.view.imagePadding = 0;
   if(typeof(imagePadding) != 'undefined'){
-    transData.view.imagePadding = imagePadding
+    transData.view.imagePadding = imagePadding/windowRatio    //todo
   }
   var bindData = {};
   bindData[bindName] = transData;

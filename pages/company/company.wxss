@@ -31,10 +31,15 @@
 .wxParse{
   text-align: justify;
   background: #222;
-  color: #bbb;
+  color: #ddd;
   font-size: 34rpx;
   line-height: 1.5rem;
   /* text-indent: 2rem; */
+}
+
+/*添加<p>的css属性*/
+.wxParse-p{
+  margin-bottom: 20rpx;
 }
 
 /*root页面的属性*/
