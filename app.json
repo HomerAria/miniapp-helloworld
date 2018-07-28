@@ -4,7 +4,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/company/company",
-    "pages/feed/feed"
+    "pages/feed/feed",
+    "pages/animator/animator"
   ],
   "window": {
     "navigationBarBackgroundColor": "#333333",

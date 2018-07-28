@@ -1,6 +1,7 @@
 <!--pages/stock/compA/compA.wxml-->
 
 <view class="root" style="height:{{scrollHeight}}px">A + {{scrollHeight}}
-  <button class="baseButton" bind:tap="onButtonClick" data-hi="sean">click me {{items.title}}</button>
+  <button class="baseButton" bind:tap="onButtonClick" data-hi="sean">富文本</button>
+  <button class="baseButton" bind:tap="onButtonClicka" data-hi="sean">动画</button>
 
 </view>

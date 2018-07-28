@@ -6,7 +6,7 @@ Component({
   properties: {
     propA: {
       type: Object,
-      observer: function(newVal, oldVal, changePath) {
+      observer: function (newVal, oldVal, changePath) {
         this.setData({
           scrollHeight: newVal.windowHeight - 35,
         })
@@ -28,7 +28,7 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onButtonClick: function(e) {
+    onButtonClick: function (e) {
       console.log(e.currentTarget.dataset);
       wx.showToast({
         title: 'click',
@@ -36,13 +36,36 @@ Component({
         image: '',
         duration: 1000,
         mask: true,
-        success: function(res) {},
-        fail: function(res) {},
-        complete: function(res) {},
+        success: function (res) { },
+        fail: function (res) { },
+        complete: function (res) { },
       });
 
       wx.navigateTo({
         url: '../company/company',
+      })
+
+
+      console.log("onLoad:" + getApp().globalData.screenHeight);
+
+
+    },
+
+    onButtonClicka: function (e) {
+      console.log(e.currentTarget.dataset);
+      wx.showToast({
+        title: 'click',
+        icon: '',
+        image: '',
+        duration: 1000,
+        mask: true,
+        success: function (res) { },
+        fail: function (res) { },
+        complete: function (res) { },
+      });
+
+      wx.navigateTo({
+        url: '../animator/animator',
       })
 
 
