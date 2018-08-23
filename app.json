@@ -6,7 +6,8 @@
     "pages/company/company",
     "pages/feed/feed",
     "pages/animator/animator",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/movable/movable"
   ],
   "window": {
     "navigationBarBackgroundColor": "#333333",

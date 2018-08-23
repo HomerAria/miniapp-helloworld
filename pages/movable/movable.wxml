@@ -1,0 +1,6 @@
+<!--pages/movable/movable.wxml-->
+<movable-area style="height: 300px;width: 300px;background:gray;">
+  <movable-view direction="all" style="height: 50px; width: 50px; background: green;"/>
+  <movable-view direction="horizontal" style="height: 20px; width: 50px; background: yellow;"/>
+  <movable-view direction="vertical" style="height: 20px; width: 20px; background: black;"/>
+</movable-area>

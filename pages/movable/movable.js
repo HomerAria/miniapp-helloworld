@@ -1,4 +1,4 @@
-// pages/list/list.js
+// pages/movable/movable.js
 Page({
 
   /**
@@ -6,17 +6,6 @@ Page({
    */
   data: {
   
-  },
-
-  //事件处理函数
-  movableView: function () {
-    wx.navigateTo({
-      url: '../movable/movable'
-    })
-  },
-
-  dragSort: function () {
-
   },
 
   /**
