@@ -10,6 +10,13 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
+  //事件处理函数
+  movableView: function () {
+    wx.navigateTo({
+      url: '../search/search'
+    })
+  },
+
   //下载刷新
   onPullDownRefresh: function () {
     wx.stopPullDownRefresh();

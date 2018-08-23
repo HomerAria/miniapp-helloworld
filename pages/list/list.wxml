@@ -1,0 +1,21 @@
+<!--pages/list/list.wxml-->
+<view class="page__bd page__bd_spacing">
+  <button bindtap="movableView" class="weui-btn" type="primary">
+    <text class="">可拖动控件</text>
+  </button>
+  <button bindtap="categoryTap" class="weui-btn" type="primary">
+    <text class="">分类选择</text>
+  </button>
+  <button bindtap="saleActsTap" class="weui-btn" type="primary">
+    <text class="">活动页面</text>
+  </button>
+  <button bindtap="discountCouponTap" class="weui-btn" type="primary">
+    <text class="">优惠券页面</text>
+  </button>
+  <button bindtap="couponCenterTap" class="weui-btn" type="primary">
+    <text class="">领券中心页面</text>
+  </button>
+  <button bindtap="searchTap" class="weui-btn" type="primary">
+    <text class=''>搜索页面</text>
+  </button>
+</view>

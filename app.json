@@ -5,7 +5,8 @@
     "pages/logs/logs",
     "pages/company/company",
     "pages/feed/feed",
-    "pages/animator/animator"
+    "pages/animator/animator",
+    "pages/list/list"
   ],
   "window": {
     "navigationBarBackgroundColor": "#333333",
@@ -35,7 +36,7 @@
       },
       {
         "text": "我的",
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/list/list",
         "iconPath": "pages/images/mine_s.png",
         "selectedIconPath": "pages/images/mine.png"
       }
