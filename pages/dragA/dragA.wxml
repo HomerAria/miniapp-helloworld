@@ -1,0 +1,8 @@
+<!--pages/dragA/dragA.wxml-->
+<view style="display:flex; flex-direction:row; align-items:flex-end;">
+  <text class="titleMain">已添加分类</text>
+  <text class="titleHint">(长按后可以拖拽排序)</text>
+</view>
+
+<view class="tabContain">
+</view>

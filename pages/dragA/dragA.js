@@ -1,4 +1,5 @@
-// pages/list/list.js
+// pages/dragA/dragA.js
+
 Page({
 
   /**
@@ -6,19 +7,6 @@ Page({
    */
   data: {
   
-  },
-
-  //事件处理函数
-  movableView: function () {
-    wx.navigateTo({
-      url: '../movable/movable'
-    })
-  },
-
-  dragSort: function () {
-    wx.navigateTo({
-      url: '../dragA/dragA'
-    })
   },
 
   /**

@@ -1,0 +1,14 @@
+/* pages/dragA/dragA.wxss */
+.titleMain{
+  font-size: 32rpx;
+  color: black;
+  margin: 10rpx;
+  margin-left: 30rpx;
+  
+}
+
+.titleHint{
+  font-size: 24rpx;
+  color: #aaa;
+  margin: 12rpx;
+}
