@@ -4,5 +4,12 @@
   <text class="titleHint">(长按后可以拖拽排序)</text>
 </view>
 
+<movable-area style="height:{{listHeight}}px; width:100%; position: absolute;">
+<movable-view direction="all" class="tabItem withShadow">我的</movable-view>
+</movable-area>
+
 <view class="tabContain">
+  <view class="tabItem" wx:for="{{tabPool}}" wx:key="#eeeGGFFF  fffffffffffffffff7rrrrrrrrrrrrrrrr5444443333tabKey">
+    {{item.tab}}
+  </view>
 </view>

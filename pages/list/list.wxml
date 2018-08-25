@@ -6,5 +6,7 @@
   <button bindtap="dragSort" class="weui-btn" type="primary">
     <text class="">拖动排序列表</text>
   </button>
-
+  <button bindtap="foldUp" class="weui-btn" type="primary">
+    <text class="">折叠展开</text>
+  </button>
 </view>

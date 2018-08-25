@@ -1,0 +1,13 @@
+<!--pages/fold/fold.wxml-->
+<view class="cardBox">
+  <view wx:for="{{cardList}}" wx:key="key" class="cardItem">
+    <view class="itemHolder">
+      <view class="cardItem frame {{item.title}} {{item.key==(flag-1) ? frameClass1 : ''}}">正 {{item.title}}</view>
+      <view class="cardItem frame {{item.title}} {{item.key==(flag-1) ? frameClass2 : ''}}">反 {{item.title}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='float-bubble' bind:tap='start'>
+  翻
+</view>

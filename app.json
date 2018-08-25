@@ -8,7 +8,8 @@
     "pages/animator/animator",
     "pages/list/list",
     "pages/movable/movable",
-    "pages/dragA/dragA"
+    "pages/dragA/dragA",
+    "pages/fold/fold"
   ],
   "window": {
     "navigationBarBackgroundColor": "#333333",

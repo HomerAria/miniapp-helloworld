@@ -1,0 +1,133 @@
+/* pages/fold/fold.wxss */
+
+page {
+  height: 100%;
+  background: #333;
+}
+
+.cardBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #333;
+}
+
+.cardItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 375rpx;
+}
+
+.itemHolder {
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 375rpx;
+}
+
+.frame {
+  width: 100%;
+  color: white;
+  position: absolute;
+}
+
+.cardItem .A {
+  background: #62575f;
+}
+
+.cardItem .B {
+  width: 100%;
+  background: #776473;
+}
+
+.cardItem .C {
+  width: 100%;
+  background: #a27777;
+}
+
+.cardItem .D {
+  width: 100%;
+  background: #b18787;
+}
+
+.cardItem .E {
+  width: 100%;
+  background: #e3ab95;
+}
+
+.cardItem .F {
+  width: 100%;
+  background: #ecbea9;
+}
+
+/*翻转动画*/
+
+.front {
+  animation: front 1s ease-in-out 1;
+  /* backface-visibility: hidden;   因为正面的z-index更高 */
+}
+
+.back {
+  animation: back 1s ease-in-out 1;
+}
+
+@keyframes front {
+  from {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateX(180deg);
+    opacity: 1;
+  }
+}
+
+@keyframes back {
+  from {
+    transform: rotateX(-180deg);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+/*对应正面，默认显示面*/
+.z1 {
+  z-index: 2;
+}
+
+.z2 {
+  z-index: 1;
+}
+
+/*启动动画按钮*/
+
+.float-bubble {
+  position: fixed;
+  right: 50rpx;
+  bottom: 50rpx;
+  width: 120rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #002d74;
+  background-color: white;
+  border-radius: 75rpx;
+  box-shadow: 1px 1px 10px #222;
+  z-index: 9;
+}

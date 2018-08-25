@@ -21,6 +21,12 @@ Page({
     })
   },
 
+  foldUp: function () {
+    wx.navigateTo({
+      url: '../fold/fold'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

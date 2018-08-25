@@ -12,3 +12,28 @@
   color: #aaa;
   margin: 12rpx;
 }
+
+.tabContain{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tabItem{
+  font-size: 30rpx;
+  color: #555;
+  width: 20%;
+  height: 50rpx;
+  border: 1rpx solid #ccc;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background: #eee;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.withShadow{
+  box-shadow: 1px 1px 5px #aaa;
+}
