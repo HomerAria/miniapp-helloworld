@@ -1,0 +1,5 @@
+<!--pages/pdf/pdf.wxml-->
+<text>pages/pdf/pdf.wxml</text>
+<view class='float-bubble' catch:tap='start'>
+  pdf
+</view>

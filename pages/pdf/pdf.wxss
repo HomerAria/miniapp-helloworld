@@ -1,0 +1,21 @@
+/* pages/pdf/pdf.wxss */
+.float-bubble {
+  position: fixed;
+  right: 50rpx;
+  bottom: 50rpx;
+  width: 120rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #002d74;
+  background-color: white;
+  border-radius: 75rpx;
+  box-shadow: 1px 1px 10px #222;
+  z-index: 9;
+}
+
+page{
+  background: #333;
+}

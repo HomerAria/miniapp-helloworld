@@ -1,15 +1,17 @@
 {
   "pages": [
+    "pages/list/list",
     "pages/stock/stock",
     "pages/index/index",
     "pages/logs/logs",
     "pages/company/company",
     "pages/feed/feed",
     "pages/animator/animator",
-    "pages/list/list",
     "pages/movable/movable",
     "pages/dragA/dragA",
-    "pages/fold/fold"
+    "pages/fold/fold",
+    "pages/pdf/pdf",
+    "pages/pdf/loader/loader"
   ],
   "window": {
     "navigationBarBackgroundColor": "#333333",

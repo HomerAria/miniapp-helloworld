@@ -7,6 +7,9 @@
     <text class="">拖动排序列表</text>
   </button>
   <button bindtap="foldUp" class="weui-btn" type="primary">
-    <text class="">折叠展开</text>
+    <text class="">点击3D翻转</text>
+  </button>
+  <button bindtap="pdf" class="weui-btn" type="primary">
+    <text class="">显示在线pdf</text>
   </button>
 </view>
