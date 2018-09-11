@@ -1,0 +1,11 @@
+<!--pages/calendar/calendar.wxml-->
+<import src="../../template/calendar/index.wxml"/>
+<view class="calendar-wrap">
+   <template is="calendar" data="{{...calendar}}" />
+</view>
+
+<text style='background:#eee; margin: 10px;' bind:tap="switchCalendar">switch</text>
+
+<text style='background:#eee; margin: 10px;' bind:tap="todo">todo</text>
+
+<text style='background:#eee; margin: 10px;' bind:tap="today">today</text>

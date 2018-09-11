@@ -33,6 +33,12 @@ Page({
     })
   },
 
+  calendar: function(){
+    wx.navigateTo({
+      url: '../calendar/calendar'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

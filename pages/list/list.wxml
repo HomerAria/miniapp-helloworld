@@ -12,4 +12,7 @@
   <button bindtap="pdf" class="weui-btn" type="primary">
     <text class="">显示在线pdf</text>
   </button>
+  <button bindtap="calendar" class="weui-btn" type="primary">
+    <text class="">日历功能</text>
+  </button>
 </view>

@@ -11,7 +11,7 @@
     "pages/dragA/dragA",
     "pages/fold/fold",
     "pages/pdf/pdf",
-    "pages/pdf/loader/loader"
+    "pages/calendar/calendar"
   ],
   "window": {
     "navigationBarBackgroundColor": "#333333",
