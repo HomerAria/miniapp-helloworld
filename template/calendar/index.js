@@ -956,11 +956,11 @@ const conf = {
     //week-->month
     else {
       this.weekMode = false;
-      let {
-        year,
-        month,
-        day
-      } = currentDay;
+      // let {
+      //   year,
+      //   month,
+      //   day
+      // } = currentDay;
       // if (curYear !== year || curMonth !== month) day = 1;
       // conf.renderCalendar.call(this, curYear, curMonth, day);
 
