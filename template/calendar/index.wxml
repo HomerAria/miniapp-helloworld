@@ -3,7 +3,7 @@
     <view class="calendar pink-color box box-tb">
 
       <!--20**年*月-->
-      <view class="top-handle fs28 box box-lr box-align-center box-pack-center">
+      <!-- <view class="top-handle fs28 box box-lr box-align-center box-pack-center">
         <view class="prev box box-rl" bindtap="choosePrevMonth" data-handle="prev">
           <view class="prev-handle box box-lr box-align-center box-pack-center">《</view>
         </view>
@@ -11,7 +11,7 @@
         <view class="next box box-lr" bindtap="chooseNextMonth" data-handle="next">
           <view class="next-handle box box-lr box-align-center box-pack-center">》</view>
         </view>
-      </view>
+      </view> -->
 
       <!--首行：星期-->
       <view class="weeks box box-lr box-pack-center box-align-center">

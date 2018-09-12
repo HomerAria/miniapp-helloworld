@@ -9,3 +9,5 @@
 <text style='background:#eee; margin: 10px;' bind:tap="todo">todo</text>
 
 <text style='background:#eee; margin: 10px;' bind:tap="today">today</text>
+
+<text style='background:#aaa; margin: 10px;' >{{time}}</text>

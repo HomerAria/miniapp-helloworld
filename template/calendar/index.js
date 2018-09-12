@@ -110,6 +110,19 @@ export function isRightSlide(e) {
 
 const conf = {
   /**
+   * todo：向外传出年月信息
+   */
+  exportTime(year, month) {
+    const {
+      onMonthChanged
+    } = this.config;
+
+    if (onMonthChanged && typeof onMonthChanged === 'function') {
+      onMonthChanged(year, month);
+    }
+  },
+
+  /**
    * 计算指定月份共多少天
    * @param {number} year 年份
    * @param {number} month  月份
@@ -141,8 +154,8 @@ const conf = {
    * @param {number} curDate
    */
   renderCalendar(curYear, curMonth, curDate) {
-    conf.calculateEmptyGrids.call(this, curYear, curMonth);
     conf.calculateDays.call(this, curYear, curMonth, curDate);
+    conf.calculateEmptyGrids.call(this, curYear, curMonth);
     const {
       todoLabels
     } = this.data.calendar || {};
@@ -288,6 +301,7 @@ const conf = {
       'calendar.curYear': newYear,
       'calendar.curMonth': newMonth,
     });
+    conf.exportTime.call(this, newYear, newMonth);
     conf.renderCalendar.call(this, newYear, newMonth);
   },
   /**
@@ -306,6 +320,7 @@ const conf = {
       'calendar.curYear': newYear,
       'calendar.curMonth': newMonth
     });
+    conf.exportTime.call(this, newYear, newMonth);
     conf.renderCalendar.call(this, newYear, newMonth);
   },
   /**
@@ -403,10 +418,12 @@ const conf = {
       onTapDay,
       e
     } = opts;
+    //前值
     const {
       month: sMonth,
       year: sYear
     } = selectedDays[0] || {};
+    //当前值
     const {
       month: dMonth,
       year: dYear
@@ -414,6 +431,7 @@ const conf = {
     const {
       calendar = {}
     } = this.data;
+
     if ((sMonth === dMonth && sYear === dYear) && !this.weekMode) days[selectedDays[0].day - 1].choosed = false;
     if (this.weekMode) {
       days.map((item, idx) => {
@@ -447,6 +465,15 @@ const conf = {
       'calendar.days': days,
       'calendar.selectedDay': [currentSelected],
     });
+
+    if(this.weekMode)
+    {
+      //月份是否发生改变
+      if (!(sMonth === currentSelected.month && sYear === currentSelected.year)) {
+        conf.exportTime.call(this, currentSelected.year, currentSelected.month)
+      }
+    }
+
     conf.afterTapDay.call(this, currentSelected);
   },
   /**
@@ -566,6 +593,7 @@ const conf = {
 
     // var e.currentTarget.dataset.idx = ;
     // conf.tapDayItem(e)
+    conf.exportTime.call(this, curYear, curMonth);
     conf.renderCalendar.call(this, curYear, curMonth, curDate);
 
   },
@@ -772,6 +800,7 @@ const conf = {
       'calendar.curMonth': curMonth,
       'calendar.days': days,
     });
+    conf.exportTime.call(this, curYear, curMonth);
   },
   /**
    * 计算上一周的日期
@@ -831,6 +860,7 @@ const conf = {
       'calendar.curMonth': curMonth,
       'calendar.days': days,
     });
+    conf.exportTime.call(this, curYear, curMonth);
   },
   /**
    * 计算当前选中日期所在周，并重新渲染日历
@@ -976,6 +1006,14 @@ function bindFunctionToPage(functionArray) {
 export const getSelectedDay = () => {
   const self = _getCurrentPage();
   return self.data.calendar.selectedDay;
+};
+
+/**
+ * todo:获取当前年月
+ */
+export const getCurrentMonth = () => {
+  const self = _getCurrentPage();
+  return self.data.calendar.curYear + "年" + self.data.calendar.curMonth + "月";
 };
 
 /**

@@ -103,7 +103,7 @@
 
 .week {
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   color: #a9a9a9;
 }
 
