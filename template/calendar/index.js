@@ -466,10 +466,13 @@ const conf = {
       'calendar.selectedDay': [currentSelected],
     });
 
-    if(this.weekMode)
-    {
+    if (this.weekMode) {
       //月份是否发生改变
       if (!(sMonth === currentSelected.month && sYear === currentSelected.year)) {
+        this.setData({
+          'calendar.curYear': currentSelected.year,
+          'calendar.curMonth': currentSelected.month,
+        });
         conf.exportTime.call(this, currentSelected.year, currentSelected.month)
       }
     }
@@ -943,18 +946,28 @@ const conf = {
     } = this.data.calendar;
     if (!selectedDay.length) return;
     const currentDay = selectedDay[0];
+
+    //month-->week
     if (view === 'week') {
       if (this.weekMode) return;
       this.weekMode = true;
       conf.selectedDayWeekAllDays.call(this, currentDay);
-    } else {
+    }
+    //week-->month
+    else {
       this.weekMode = false;
       let {
         year,
         month,
         day
       } = currentDay;
-      if (curYear !== year || curMonth !== month) day = 1;
+      // if (curYear !== year || curMonth !== month) day = 1;
+      // conf.renderCalendar.call(this, curYear, curMonth, day);
+
+      // this.setData({
+      //   'calendar.curYear': year,
+      //   'calendar.curMonth': month,
+      // });
       conf.renderCalendar.call(this, curYear, curMonth, day);
     }
   },
